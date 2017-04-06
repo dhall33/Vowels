@@ -8,7 +8,7 @@ public static void main(String[] args) {
 
     char letter, letterA, letterE, letterI, letterO, letterU, letterother;
     String line;
-    int a = 0, e = 0, i = 0, o = 0, u = 0, other = 0;
+    int a = 0, e = 0, i = 0, o = 0, u = 0, other = 0; //default values
 
 	letterA = 'a';
 	letterE = 'e';
@@ -17,11 +17,11 @@ public static void main(String[] args) {
 	letterU = 'u';
 
 
-	System.out.println("Enter a String to be processed for vowels: ");
+	System.out.println("Enter a String so I can count the vowels: ");
         line = scan.nextLine();
 
 	 
-        switch (charAt(letter)) {
+        switch (charAt(letter)) { //the switch for each case
 
 	      case letterA:
 	        a = a++;
@@ -48,7 +48,7 @@ public static void main(String[] args) {
 	        break;
 
 	      default:
-            System.out.println("Error: String contained no characters.");
+            System.out.println("Error: Please only use characters.");
 
 	    }
 
